@@ -1,0 +1,30 @@
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.AssemblyInfo.cs
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.exe
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.deps.json
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.runtimeconfig.json
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.dll
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.pdb
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.dll
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\refint\Vitbid.ISP20.Kiseleva.dll
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.pdb
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.genruntimeconfig.cache
+C:\Users\student\Desktop\kiseleva\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\ref\Vitbid.ISP20.Kiseleva.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.exe
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.deps.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.runtimeconfig.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\bin\Debug\net6.0\Vitbid.ISP20.Kiseleva.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.csproj.AssemblyReference.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.AssemblyInfoInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.AssemblyInfo.cs
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.csproj.CoreCompileInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\refint\Vitbid.ISP20.Kiseleva.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\Vitbid.ISP20.Kiseleva.genruntimeconfig.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva\obj\Debug\net6.0\ref\Vitbid.ISP20.Kiseleva.dll

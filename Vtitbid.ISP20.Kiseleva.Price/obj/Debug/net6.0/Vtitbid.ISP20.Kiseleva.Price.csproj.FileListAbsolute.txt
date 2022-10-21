@@ -1,0 +1,15 @@
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.csproj.AssemblyReference.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.AssemblyInfoInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.AssemblyInfo.cs
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.csproj.CoreCompileInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.exe
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.deps.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.runtimeconfig.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\refint\Vtitbid.ISP20.Kiseleva.Price.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Price.genruntimeconfig.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Price\obj\Debug\net6.0\ref\Vtitbid.ISP20.Kiseleva.Price.dll

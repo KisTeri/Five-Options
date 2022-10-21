@@ -1,0 +1,15 @@
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.exe
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.deps.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.runtimeconfig.json
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.csproj.AssemblyReference.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.AssemblyInfoInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.AssemblyInfo.cs
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.csproj.CoreCompileInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\refint\Vtitbid.ISP20.Kiseleva.Route.dll
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Route.genruntimeconfig.cache
+C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Route\obj\Debug\net6.0\ref\Vtitbid.ISP20.Kiseleva.Route.dll

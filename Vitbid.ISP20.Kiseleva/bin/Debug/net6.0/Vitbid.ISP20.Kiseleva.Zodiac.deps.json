@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Vitbid.ISP20.Kiseleva.Zodiac/1.0.0": {
+        "runtime": {
+          "Vitbid.ISP20.Kiseleva.Zodiac.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vitbid.ISP20.Kiseleva.Zodiac/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
