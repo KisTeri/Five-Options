@@ -123,8 +123,34 @@ namespace Vtitbid.ISP20.Kiseleva.Price2_0
             }
             return array;
         }
+        public int InputNumber()
+        {
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            string? information = Console.ReadLine();
+            Console.Clear();
+            bool result = int.TryParse(information, out var numberFirst);
+            try
+            {
+                if (result == true)
+                {
+                    Console.WriteLine($"Количество записей: {numberFirst}");
+                }
+                else
+                {
+                    throw new Exception("Ошибка ввода количества записей");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+                Environment.Exit(0);
+            }
+            return numberFirst;
+        }
         public static void Sort(Price2_0[] array)
         {
+            Console.WriteLine();
+            Console.WriteLine("Отсортированные записи:");
             var sortedShop = from p in array
                              orderby p.ShopName
                              select p;

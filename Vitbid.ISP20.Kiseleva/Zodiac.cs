@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Vtitbid.ISP20.Kiseleva.Zodiac
@@ -61,7 +62,8 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
                 }
             }
         }
-        public DateOfBirthZodiac DateOfBirthZodiac { get; set; }
+        public DateOfBirthZodiac DateOfBirthZodiac { get; set;}
+       
         public string ZodiacSign { get; set; }
         public Zodiac(string firstName, string lastName, DateOfBirthZodiac dateOfBirthZodiac)
         {
@@ -76,6 +78,30 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
         }
         public Zodiac() { }
+        public int InputNumber()
+        {
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            string? information = Console.ReadLine();
+            Console.Clear();
+            bool result = int.TryParse(information, out var numberFirst);
+            try
+            {
+                if (result == true)
+                {
+                    Console.WriteLine($"Количество записей: {numberFirst}");
+                }
+                else
+                {
+                    throw new Exception("Ошибка ввода количества записей");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+                Environment.Exit(0);
+            }
+            return numberFirst;
+        }
         public static Zodiac[] Fill(int count)
         {
             Zodiac[] array = new Zodiac[count];
@@ -89,16 +115,16 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
                 Console.Write("Введите фамилию: ");
                 array[i].LastName = Console.ReadLine();
-
-                Console.Write("Введите день: ");
-                array[i].DateOfBirthZodiac.Day = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Введите месяц: ");
+                
+                Console.Write("Введите день(формат: цифра): ");
+                array[i].DateOfBirthZodiac.Day = Convert.ToInt16(Console.ReadLine());
+                
+                Console.Write("Введите месяц(формат: цифра): ");
                 array[i].DateOfBirthZodiac.Month = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Введите год: ");
+                
+                Console.Write("Введите год(формат: цифра): ");
                 array[i].DateOfBirthZodiac.Year = Convert.ToInt32(Console.ReadLine());
-
+                
                 GetSign(array[i]);
                 Console.WriteLine();
             }
@@ -108,112 +134,84 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Дата рождения: {array[i].DateOfBirthZodiac.Day}.{array[i].DateOfBirthZodiac.Month}.{array[i].DateOfBirthZodiac.Year}г. Знак зодиака: {array[i].ZodiacSign}");
+                Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Дата рождения: {array[i].DateOfBirthZodiac.Day}.{array[i].DateOfBirthZodiac.Month}.{array[i].DateOfBirthZodiac.Year}г; Знак зодиака: {array[i].ZodiacSign}");
             }
         }
         public static void GetSign(Zodiac array)
         {
-
             switch (array.DateOfBirthZodiac.Month)
             {
                 case 1:
-                    if (array.DateOfBirthZodiac.Month == 01 || array.DateOfBirthZodiac.Month == 1)
-                    {
                         if (array.DateOfBirthZodiac.Day < 20)
                         {
                             array.ZodiacSign = "Знак зодиака: Козерог";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Водолей";
-                    }
                     break;
                 case 2:
-                    if (array.DateOfBirthZodiac.Month == 02 || array.DateOfBirthZodiac.Month == 2)
-                    {
                         if (array.DateOfBirthZodiac.Day < 19)
                         {
                             array.ZodiacSign = "Знак зодиака: Водолей";
                         }
                         else
                             Console.WriteLine("Знак зодиака: Рыбы");
-                    }
                     break;
                 case 3:
-                    if (array.DateOfBirthZodiac.Month == 03 || array.DateOfBirthZodiac.Month == 3)
-                    {
                         if (array.DateOfBirthZodiac.Day < 20)
                         {
                             array.ZodiacSign = "Знак зодиака: Рыбы";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Овен";
-                    }
                     break;
                 case 4:
-                    if (array.DateOfBirthZodiac.Month == 04 || array.DateOfBirthZodiac.Month == 4)
-                    {
                         if (array.DateOfBirthZodiac.Day < 20)
                         {
                             array.ZodiacSign = "Знак зодиака: Овен";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Телец";
-                    }
                     break;
                 case 5:
-                    if (array.DateOfBirthZodiac.Month == 05 || array.DateOfBirthZodiac.Month == 5)
-                    {
                         if (array.DateOfBirthZodiac.Day < 21)
                         {
                             array.ZodiacSign = "Знак зодиака: Телец";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Близнецы";
-                    }
                     break;
                 case 6:
-                    if (array.DateOfBirthZodiac.Month == 06 || array.DateOfBirthZodiac.Month == 6)
-                    {
                         if (array.DateOfBirthZodiac.Day < 21)
                         {
                             array.ZodiacSign = "Знак зодиака: Близнецы";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Рак";
-                    }
                     break;
                 case 7:
-                    if (array.DateOfBirthZodiac.Month == 07 || array.DateOfBirthZodiac.Month == 7)
-                    {
                         if (array.DateOfBirthZodiac.Day < 22)
                         {
                             array.ZodiacSign = "Знак зодиака: Рак";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Лев";
-                    }
                     break;
                 case 8:
-                    if (array.DateOfBirthZodiac.Month == 08 || array.DateOfBirthZodiac.Month == 8)
-                    {
                         if (array.DateOfBirthZodiac.Day < 23)
                         {
                             array.ZodiacSign = "Знак зодиака: Лев";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Дева";
-                    }
                     break;
                 case 9:
-                    if (array.DateOfBirthZodiac.Month == 09 || array.DateOfBirthZodiac.Month == 9)
-                    {
                         if (array.DateOfBirthZodiac.Day < 23)
                         {
                             array.ZodiacSign = "Знак зодиака: Дева";
                         }
                         else
                             array.ZodiacSign = "Знак зодиака: Весы";
-                    }
                     break;
                 case 10:
                     if (array.DateOfBirthZodiac.Day < 23)
@@ -243,6 +241,8 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
         }
         public static void Sort(Zodiac[] array)
         {
+            Console.WriteLine();
+            Console.WriteLine("Отсортированные записи:");
             var sortedZodiac = from p in array
                                orderby p.LastName
                                select p;
@@ -256,7 +256,7 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
             int counter = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (strLastName == array[i].LastName || strLastName == array[i].LastName)
+                if (strLastName == array[i].LastName)
                 {
                     counter++;
                 }
@@ -268,7 +268,7 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
             for (int i = 0; i < array.Length; i++)
             {
-                if (strLastName == array[i].LastName || strLastName == array[i].LastName)
+                if (strLastName == array[i].LastName)
                 {
                     Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Дата рождения: {array[i].DateOfBirthZodiac.Day}.{array[i].DateOfBirthZodiac.Month}.{array[i].DateOfBirthZodiac.Year}г. Знак зодиака: {array[i].ZodiacSign}");
                 }

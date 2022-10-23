@@ -24,7 +24,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             {
                 try
                 {
-                    Regex expressionAph = new Regex(@"^[a-zA-Z]+|[а-яА-Я]+$");
+                    Regex expressionAph = new Regex(@"^[pNumber-zA-Z]+|[а-яА-Я]+$");
                     if (expressionAph.IsMatch(value))
                     {
                         _name = value;
@@ -51,7 +51,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             {
                 try
                 {
-                    Regex expressionAph = new Regex(@"^[a-zA-Z]+|[а-яА-Я]+$");
+                    Regex expressionAph = new Regex(@"^[pNumber-zA-Z]+|[а-яА-Я]+$");
                     if (expressionAph.IsMatch(value))
                     {
                         _surname = value;
@@ -104,10 +104,29 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             LastName = lastName;
             PhoneNumber = phoneNumber;
         }
-
-        public override string ToString()
+        public int InputNumber()
         {
-            return $"Имя: {FirstName}; Фамилия: {LastName}; Номер телефона: {string.Format("{0:+# (###) ###-##-##}", Convert.ToInt64(PhoneNumber))}; {DateOfBirth}";
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            string? information = Console.ReadLine();
+            Console.Clear();
+            bool result = int.TryParse(information, out var numberFirst);
+            try
+            {
+                if (result == true)
+                {
+                    Console.WriteLine($"Количество записей: {numberFirst}");
+                }
+                else
+                {
+                    throw new Exception("Ошибка ввода количества записей");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+                Environment.Exit(0);
+            }
+            return numberFirst;
         }
         public static Note[] Fill(int count)
         {
@@ -123,26 +142,33 @@ namespace Vtitbid.ISP20.Kiseleva.Note
                 Console.Write("Введите фамилию: ");
                 array[i].LastName = Console.ReadLine();
 
-                Console.Write("Введите номер телефона, начиная с 7хххххххххх: ");
+                Console.Write("Введите номер телефона(формат: цифра): ");
                 array[i].PhoneNumber = Console.ReadLine();
 
-                Console.Write("Введите день: ");
+                Console.Write("Введите день(формат: цифра): ");
                 array[i].DateOfBirth.Day = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Введите месяц: ");
+                Console.Write("Введите месяц(формат: цифра): ");
                 array[i].DateOfBirth.Month = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Введите год: ");
+                Console.Write("Введите год(формат: цифра): ");
                 array[i].DateOfBirth.Year = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine();
-
             }
             return array;
+        }
+        public static void Output(Note[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Номер телефона: {array[i].PhoneNumber}; Дата рождения: {array[i].DateOfBirth.Day}.{array[i].DateOfBirth.Month}.{array[i].DateOfBirth.Year}г.");
+            }
         }
         public static void Sort(Note[] array)
         {
             Console.WriteLine();
+            Console.WriteLine("Отсортированные записи:");
             var sortedNote = from p in array
                              orderby p.LastName
                              select p;
@@ -153,12 +179,12 @@ namespace Vtitbid.ISP20.Kiseleva.Note
         public static void Search(Note[] array)
         {
             Console.Write("Введите номер телефона искомого человека: ");
-            string a = Console.ReadLine();
+            string pNumber = Console.ReadLine();
             int counter = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
-                if (a == array[i].PhoneNumber || a == array[i].PhoneNumber)
+                if (pNumber == array[i].PhoneNumber)
                 {
                     counter++;
                 }
@@ -171,9 +197,9 @@ namespace Vtitbid.ISP20.Kiseleva.Note
 
             for (int i = 0; i < array.Length; i++)
             {
-                if (a == array[i].PhoneNumber || a == array[i].PhoneNumber)
+                if (pNumber == array[i].PhoneNumber)
                 {
-                    Console.WriteLine($"\n{array[i]}");
+                    Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Номер телефона: {string.Format("{0:+# (###) ###-##-##}", Convert.ToInt64(array[i].PhoneNumber))};{array[i].DateOfBirth}");
                 }
             }
         }

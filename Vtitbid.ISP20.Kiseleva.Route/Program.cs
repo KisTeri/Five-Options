@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Route[] array = Route.Fill(2);
+            var note = new Route();
+            var number = note.InputNumber();
+            Route[] array = Route.Fill(number);
+            Console.Clear();
             Route.Output(array);
             Route.Sort(array);
             Route.Search(array);

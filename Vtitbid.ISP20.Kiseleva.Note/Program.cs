@@ -6,13 +6,11 @@ namespace Vtitbid.ISP20.Kiseleva.Note
     {
         static void Main(string[] args)
         {
-            Note[] noteArr = Note.Fill(2);
+            var note = new Note();
+            var number = note.InputNumber();
+            Note[] noteArr = Note.Fill(number);
             Console.Clear();
-
-            for (int i = 0; i < noteArr.Length; i++)
-            {
-                Console.WriteLine(noteArr[i]);
-            }
+            Note.Output(noteArr);
             Note.Sort(noteArr);
             Note.Search(noteArr);
         }

@@ -104,6 +104,30 @@ namespace Vtitbid.ISP20.Kiseleva.Priсe
             ShopName = shopName;
             GoodPrice = goodPrice;
         }
+        public int InputNumber()
+        {
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            string? information = Console.ReadLine();
+            Console.Clear();
+            bool result = int.TryParse(information, out var numberFirst);
+            try
+            {
+                if (result == true)
+                {
+                    Console.WriteLine($"Количество записей: {numberFirst}");
+                }
+                else
+                {
+                    throw new Exception("Ошибка ввода количества записей");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+                Environment.Exit(0);
+            }
+            return numberFirst;
+        }
         public static Price[] Fill(int count)
         {
             Price[] priceArr = new Price[count];
@@ -126,6 +150,8 @@ namespace Vtitbid.ISP20.Kiseleva.Priсe
         }
         public static void Sort(Price[] priceArr)
         {
+            Console.WriteLine();
+            Console.WriteLine("Отсортированные записи:");
             var sortedGood = from p in priceArr
                              orderby p.GoodName
                              select p;

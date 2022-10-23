@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Vtitbid.ISP20.Kiseleva.Zodiac
@@ -22,7 +23,8 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
                 try
                 {
-                    if (value >= 1 && value <= 31)
+                    Regex expressionNum = new Regex(@"^\d+$");
+                    if (value >= 1 && value <= 31 && expressionNum.IsMatch(Convert.ToString(value)))
                     {
                         _day = value;
                     }
@@ -52,7 +54,8 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
             {
                 try
                 {
-                    if (value >= 1 && value <= 12)
+                    Regex expressionNum = new Regex(@"^\d+$");
+                    if (value >= 1 && value <= 12 && expressionNum.IsMatch(Convert.ToString(value)))
                     {
                         _month = value;
 
@@ -85,7 +88,8 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
                 try
                 {
-                    if (value >= 1900 && value <= 2022)
+                    Regex expressionNum = new Regex(@"^\d+$");
+                    if (value >= 1900 && value <= 2022 && expressionNum.IsMatch(Convert.ToString(value)))
                     {
                         _year = value;
                     }

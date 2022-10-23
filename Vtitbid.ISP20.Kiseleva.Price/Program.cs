@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Price[] array = Price.Fill(2);
+            var note = new Price();
+            var number = note.InputNumber();
+            Price[] array = Price.Fill(number);
             Price.Sort(array);
             Price.Search(array);
         }

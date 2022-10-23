@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Zodiac[] array = Zodiac.Fill(2);
+            var zodiac = new Zodiac();
+            var number = zodiac.InputNumber();
+            Zodiac[] array = Zodiac.Fill(number);
+            Console.Clear();
             Zodiac.Output(array);
             Zodiac.Sort(array);
             Zodiac.Search(array);

@@ -5,13 +5,15 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vitbid.ISP20.Kiseleva.Zodiac", "Vitbid.ISP20.Kiseleva\Vitbid.ISP20.Kiseleva.Zodiac.csproj", "{64DF6CFE-F494-4347-9F52-83E6D9EABE40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.ISP20.Kiseleva.Note", "Vtitbid.ISP20.Kiseleva.Note\Vtitbid.ISP20.Kiseleva.Note.csproj", "{6AF43FCF-15D3-4686-911F-337A0CD73325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.ISP20.Kiseleva.Note", "Vtitbid.ISP20.Kiseleva.Note\Vtitbid.ISP20.Kiseleva.Note.csproj", "{6AF43FCF-15D3-4686-911F-337A0CD73325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.ISP20.Kiseleva.Price", "Vtitbid.ISP20.Kiseleva.Price\Vtitbid.ISP20.Kiseleva.Price.csproj", "{7B7EBD27-D61E-4BA7-AEFD-4ED33D076A23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.ISP20.Kiseleva.Price", "Vtitbid.ISP20.Kiseleva.Price\Vtitbid.ISP20.Kiseleva.Price.csproj", "{7B7EBD27-D61E-4BA7-AEFD-4ED33D076A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.ISP20.Kiseleva.Price2_0", "Vtitbid.ISP20.Kiseleva.Price2_0\Vtitbid.ISP20.Kiseleva.Price2_0.csproj", "{FCE0A6DD-F56B-4DE2-A873-A3778C34B4EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.ISP20.Kiseleva.Price2_0", "Vtitbid.ISP20.Kiseleva.Price2_0\Vtitbid.ISP20.Kiseleva.Price2_0.csproj", "{FCE0A6DD-F56B-4DE2-A873-A3778C34B4EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.ISP20.Kiseleva.Route", "Vtitbid.ISP20.Kiseleva.Route\Vtitbid.ISP20.Kiseleva.Route.csproj", "{C89D21C2-9F65-4B22-A82B-6C1B52BD8B16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.ISP20.Kiseleva.Route", "Vtitbid.ISP20.Kiseleva.Route\Vtitbid.ISP20.Kiseleva.Route.csproj", "{C89D21C2-9F65-4B22-A82B-6C1B52BD8B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.ISP20.Kiseleva.Bill", "Vtitbid.ISP20.Kiseleva.Bill\Vtitbid.ISP20.Kiseleva.Bill.csproj", "{85BF269A-A7B4-4042-8479-CCD008BE4FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C89D21C2-9F65-4B22-A82B-6C1B52BD8B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C89D21C2-9F65-4B22-A82B-6C1B52BD8B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C89D21C2-9F65-4B22-A82B-6C1B52BD8B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85BF269A-A7B4-4042-8479-CCD008BE4FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BF269A-A7B4-4042-8479-CCD008BE4FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BF269A-A7B4-4042-8479-CCD008BE4FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BF269A-A7B4-4042-8479-CCD008BE4FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

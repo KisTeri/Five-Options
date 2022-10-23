@@ -105,6 +105,30 @@ namespace Vtitbid.ISP20.Kiseleva.Route
             EndingRoute = endingRoute;
             RouteNumber = routeNumber;
         }
+        public int InputNumber()
+        {
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            string? information = Console.ReadLine();
+            Console.Clear();
+            bool result = int.TryParse(information, out var numberFirst);
+            try
+            {
+                if (result == true)
+                {
+                    Console.WriteLine($"Количество записей: {numberFirst}");
+                }
+                else
+                {
+                    throw new Exception("Ошибка ввода количества записей");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+                Environment.Exit(0);
+            }
+            return numberFirst;
+        }
         public static Route[] Fill(int count)
         {
             Route[] array = new Route[count];
@@ -128,17 +152,19 @@ namespace Vtitbid.ISP20.Kiseleva.Route
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine($"\nНачальный пункт: {array[i].BeginingRoute}\nКонечный пункт: {array[i].EndingRoute}\nНомер маршрута {array[i].RouteNumber}");
+                Console.WriteLine($"Начальный пункт: {array[i].BeginingRoute}; Конечный пункт: {array[i].EndingRoute}; Номер маршрута {array[i].RouteNumber}");
             }
         }
         public static void Sort(Route[] array)
         {
+            Console.WriteLine();
+            Console.WriteLine("Отсортированные записи:");
             var sortedRoute = from p in array
                               orderby p.RouteNumber
                               select p;
 
             foreach (var p in sortedRoute)
-                Console.WriteLine($"\nНачальный пункт: {p.BeginingRoute}\nКонечный пункт: {p.EndingRoute}\nНомер маршрута {p.RouteNumber}");
+                Console.WriteLine($"Начальный пункт: {p.BeginingRoute}; Конечный пункт: {p.EndingRoute}; Номер маршрута {p.RouteNumber}");
         }
         public static void Search(Route[] array)
         {
@@ -163,7 +189,7 @@ namespace Vtitbid.ISP20.Kiseleva.Route
             {
                 if (a == array[i].BeginingRoute || a == array[i].EndingRoute)
                 {
-                    Console.WriteLine($"\nНачальный пункт: {array[i].BeginingRoute}\nКонечный пункт: {array[i].EndingRoute}\nНомер маршрута {array[i].RouteNumber}");
+                    Console.WriteLine($"Начальный пункт: {array[i].BeginingRoute}; Конечный пункт: {array[i].EndingRoute}; Номер маршрута {array[i].RouteNumber}");
                 }
             }
         }
