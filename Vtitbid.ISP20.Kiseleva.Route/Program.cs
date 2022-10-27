@@ -6,7 +6,7 @@
         {
             var note = new Route();
             var number = note.InputNumber();
-            Route[] array = Route.Fill(number);
+            Route[] array = Route.FillAndCheck(number);
             Console.Clear();
             Route.Output(array);
             Route.Sort(array);

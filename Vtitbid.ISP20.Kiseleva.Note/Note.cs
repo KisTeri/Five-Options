@@ -128,7 +128,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             }
             return numberFirst;
         }
-        public static Note[] Fill(int count)
+        public static Note[] FillAndCheck(int count)
         {
             Note[] array = new Note[count];
             for (int i = 0; i < array.Length; i++)
@@ -146,23 +146,51 @@ namespace Vtitbid.ISP20.Kiseleva.Note
                 array[i].PhoneNumber = Console.ReadLine();
 
                 Console.Write("Введите день(формат: цифра): ");
-                array[i].DateOfBirth.Day = Convert.ToInt32(Console.ReadLine());
+                var dayInput = Console.ReadLine();
+                bool dayNumber = int.TryParse(dayInput, out int day);
 
                 Console.Write("Введите месяц(формат: цифра): ");
-                array[i].DateOfBirth.Month = Convert.ToInt32(Console.ReadLine());
+                var monthInput = Console.ReadLine();
+                bool monthNumber = int.TryParse(monthInput, out int month);
 
                 Console.Write("Введите год(формат: цифра): ");
-                array[i].DateOfBirth.Year = Convert.ToInt32(Console.ReadLine());
+                var yearInput = Console.ReadLine();
+                bool yearNumber = int.TryParse(yearInput, out int year);
 
+                try
+                {
+                    if (dayNumber && monthNumber && yearNumber)
+                    {
+                        if (DateOfBirth.DateCheck(day, month, year))
+                        {
+                            array[i].DateOfBirth.Day = day;
+                            array[i].DateOfBirth.Month = month;
+                            array[i].DateOfBirth.Year = year;
+                        }
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода даты");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}");
+                    Environment.Exit(0);
+                }
                 Console.WriteLine();
             }
             return array;
+        }
+        public override string ToString()
+        {
+            return ($"Имя: {FirstName}; Фамилия: {LastName}; Номер телефона: {PhoneNumber}; Дата рождения: {DateOfBirth.Day}.{DateOfBirth.Month}.{DateOfBirth.Year}г.");
         }
         public static void Output(Note[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Номер телефона: {array[i].PhoneNumber}; Дата рождения: {array[i].DateOfBirth.Day}.{array[i].DateOfBirth.Month}.{array[i].DateOfBirth.Year}г.");
+                Console.WriteLine($"Имя: {array[i].FirstName}; Фамилия: {array[i].LastName}; Номер телефона: {array[i].PhoneNumber}; Дата рождения:{array[i].DateOfBirth.Day}.{array[i].DateOfBirth.Month}.{array[i].DateOfBirth.Year}г.");
             }
         }
         public static void Sort(Note[] array)
@@ -173,7 +201,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
                              orderby p.LastName
                              select p;
             foreach (var p in sortedNote)
-                Console.WriteLine($"Имя: {p.FirstName}; Фамилия: {p.LastName}; Номер телефона: {string.Format("{0:+# (###) ###-##-##}", Convert.ToInt64(p.PhoneNumber))}; {p.DateOfBirth}");
+                Console.WriteLine($"Имя: {p.FirstName}; Фамилия: {p.LastName}; Номер телефона: {string.Format("{0:+# (###) ###-##-##}", Convert.ToInt64(p.PhoneNumber))}; {p.DateOfBirth}г.");
             Console.WriteLine();
         }
         public static void Search(Note[] array)

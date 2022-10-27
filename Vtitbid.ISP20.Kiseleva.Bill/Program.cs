@@ -1,4 +1,6 @@
-﻿namespace Vtitbid.ISP20.Kiseleva.Bill
+﻿using static Vtitbid.ISP20.Kiseleva.Bill.Bill;
+
+namespace Vtitbid.ISP20.Kiseleva.Bill
 {
     public class Program
     {
@@ -11,6 +13,14 @@
             Bill.Output(billArr);
             Bill.Sort(billArr);
             Bill.Search(billArr);
+            static void EndMessage()
+            {
+                Console.WriteLine("\nПрограмма завершилась успешно"); ;
+            }
+            //MessageService messageService = new MessageService();
+            //messageService.MessageHandler += EndMessage;
+            Message mes = new Message(EndMessage);
+            mes?.Invoke();
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\C#\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj": {}
+    "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\C#\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj": {
+    "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\C#\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj",
+        "projectUniqueName": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj",
         "projectName": "Vtitbid.ISP20.Kiseleva.Route",
-        "projectPath": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\C#\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj",
+        "projectPath": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\Vtitbid.ISP20.Kiseleva.Route.csproj",
         "packagesPath": "C:\\Users\\kiska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\C#\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\obj\\",
+        "outputPath": "C:\\Users\\kiska\\OneDrive\\Рабочий стол\\Vitbid.ISP20.Kiseleva\\Vtitbid.ISP20.Kiseleva.Route\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Vtitbid.ISP20.Kiseleva.Bill
 {
+    public delegate void Message();
     public class Bill
     {
         private string _payerAccount = "";
@@ -107,7 +109,11 @@ namespace Vtitbid.ISP20.Kiseleva.Bill
 
         public int InputNumber()
         {
-            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+            Message mes = new Message(InputNumberForChoice);
+            mes?.Invoke();
+            //MessageService messageService = new MessageService();
+            //messageService.MessageHandler += InputNumberForChoice;
+            
             string? information = Console.ReadLine();
             Console.Clear();
             bool result = int.TryParse(information, out var numberFirst);
@@ -129,6 +135,10 @@ namespace Vtitbid.ISP20.Kiseleva.Bill
             }
             return numberFirst;
         }
+        public void InputNumberForChoice()
+        {
+            Console.Write("Введите необходимое количество записей(формат: цифра): ");
+        }
         public static Bill[] Fill(int count)
         {
             Bill[] array = new Bill[count];
@@ -143,7 +153,25 @@ namespace Vtitbid.ISP20.Kiseleva.Bill
                 array[i].PayeeAccount = Console.ReadLine();
 
                 Console.Write("Введите сумму для перевода(формат: цифра): ");
-                array[i].Sum = Convert.ToDecimal(Console.ReadLine());
+                var sumInput = Console.ReadLine();
+                bool sumNumber = int.TryParse(sumInput, out var sum);
+
+                try
+                {
+                    if (sumNumber)
+                    {
+                        array[i].Sum = sum;
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода суммы");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}");
+                    Environment.Exit(0);
+                }
 
                 Console.WriteLine();
             }

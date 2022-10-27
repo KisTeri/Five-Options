@@ -8,7 +8,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
         {
             var note = new Note();
             var number = note.InputNumber();
-            Note[] noteArr = Note.Fill(number);
+            Note[] noteArr = Note.FillAndCheck(number);
             Console.Clear();
             Note.Output(noteArr);
             Note.Sort(noteArr);

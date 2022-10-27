@@ -13,3 +13,33 @@ C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid
 C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.pdb
 C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.genruntimeconfig.cache
 C:\Users\kiska\OneDrive\Рабочий стол\C#\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\ref\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.exe
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.deps.json
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.runtimeconfig.json
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.pdb
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.AssemblyInfo.cs
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\refint\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.pdb
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.genruntimeconfig.cache
+C:\Users\student\Desktop\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\ref\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.exe
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.deps.json
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.runtimeconfig.json
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\bin\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.csproj.AssemblyReference.cache
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.AssemblyInfoInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.AssemblyInfo.cs
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.csproj.CoreCompileInputs.cache
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\refint\Vtitbid.ISP20.Kiseleva.Note.dll
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.pdb
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\Vtitbid.ISP20.Kiseleva.Note.genruntimeconfig.cache
+C:\Users\kiska\OneDrive\Рабочий стол\Vitbid.ISP20.Kiseleva\Vtitbid.ISP20.Kiseleva.Note\obj\Debug\net6.0\ref\Vtitbid.ISP20.Kiseleva.Note.dll

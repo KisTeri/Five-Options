@@ -6,7 +6,7 @@
         {
             var note = new Price2_0();
             var number = note.InputNumber();
-            Price2_0[] array = Price2_0.Fill(number);
+            Price2_0[] array = Price2_0.FillAndCheck(number);
             Console.Clear();
             Price2_0.Sort(array);
             Price2_0.Search(array);

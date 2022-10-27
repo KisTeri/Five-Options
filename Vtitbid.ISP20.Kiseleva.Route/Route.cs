@@ -129,7 +129,7 @@ namespace Vtitbid.ISP20.Kiseleva.Route
             }
             return numberFirst;
         }
-        public static Route[] Fill(int count)
+        public static Route[] FillAndCheck(int count)
         {
             Route[] array = new Route[count];
             for (int i = 0; i < array.Length; i++)
@@ -141,8 +141,25 @@ namespace Vtitbid.ISP20.Kiseleva.Route
                 Console.Write("Конечный пункт маршрута: ");
                 array[i].EndingRoute = Console.ReadLine();
 
-                Console.Write("Номер маршрута: ");
-                array[i].RouteNumber = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Цена товара: ");
+                var numberInput = Console.ReadLine();
+                bool number = int.TryParse(numberInput, out var numberOutput);
+                try
+                {
+                    if (number)
+                    {
+                        array[i].RouteNumber = numberOutput;
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода номера маршрута");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}");
+                    Environment.Exit(0);
+                }
 
                 Console.WriteLine();
             }

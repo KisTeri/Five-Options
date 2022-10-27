@@ -6,7 +6,7 @@
         {
             var zodiac = new Zodiac();
             var number = zodiac.InputNumber();
-            Zodiac[] array = Zodiac.Fill(number);
+            Zodiac[] array = Zodiac.FillAndCheck(number);
             Console.Clear();
             Zodiac.Output(array);
             Zodiac.Sort(array);

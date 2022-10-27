@@ -21,6 +21,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
                 {
                     if (value >= 1 && value <= 31)
                     {
+                        
                         _day = value;
                     }
                     else
@@ -72,6 +73,7 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             {
                 try
                 {
+                    
                     if (value >= 1900 && value <= 2022)
                     {
                         _year = value;
@@ -96,9 +98,94 @@ namespace Vtitbid.ISP20.Kiseleva.Note
             Year = year;
 
         }
+        public static bool DateCheck(int Day, int Month, int Year)
+        {
+            bool result = false;
+            switch (Month)
+            {
+                case 1:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 2:
+                    if ((Day != 0 && Day <= 28 && Year % 4 == 1))
+                    {
+                        result = true;
+                    }
+                    if (Day != 0 && Day <= 29 && ((Year % 4 == 0 && Year % 100 != 0) || Year % 400 == 0))
+                    {
+                        result = true;
+                    }
+                    break;
+                case 3:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 4:
+                    if (Day <= 30 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 5:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 6:
+                    if (Day <= 30 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 7:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 8:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 9:
+                    if (Day <= 30 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 10:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 11:
+                    if (Day <= 30 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+                case 12:
+                    if (Day <= 31 && Day != 0)
+                    {
+                        result = true;
+                    }
+                    break;
+            }
+            return result;
+        }
         public override string ToString()
         {
             return $" Дата рождения: {Day}.{Month}.{Year}";
         }
     }
 }
+

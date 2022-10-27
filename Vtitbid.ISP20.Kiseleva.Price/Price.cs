@@ -128,7 +128,7 @@ namespace Vtitbid.ISP20.Kiseleva.Priсe
             }
             return numberFirst;
         }
-        public static Price[] Fill(int count)
+        public static Price[] FillAndCheck(int count)
         {
             Price[] priceArr = new Price[count];
             for (int i = 0; i < priceArr.Length; i++)
@@ -142,7 +142,24 @@ namespace Vtitbid.ISP20.Kiseleva.Priсe
                 priceArr[i].ShopName = Console.ReadLine();
 
                 Console.Write("Цена товара: ");
-                priceArr[i].GoodPrice = Convert.ToDecimal(Console.ReadLine());
+                var priceInput = Console.ReadLine();
+                bool priceNumber = int.TryParse(priceInput, out var price);
+                try
+                {
+                    if (priceNumber)
+                    {
+                        priceArr[i].GoodPrice = price;
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода цены");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}");
+                    Environment.Exit(0);
+                }
 
                 Console.WriteLine();
             }

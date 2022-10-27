@@ -102,7 +102,7 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
             }
             return numberFirst;
         }
-        public static Zodiac[] Fill(int count)
+        public static Zodiac[] FillAndCheck(int count)
         {
             Zodiac[] array = new Zodiac[count];
             for (int i = 0; i < array.Length; i++)
@@ -115,16 +115,42 @@ namespace Vtitbid.ISP20.Kiseleva.Zodiac
 
                 Console.Write("Введите фамилию: ");
                 array[i].LastName = Console.ReadLine();
-                
+
                 Console.Write("Введите день(формат: цифра): ");
-                array[i].DateOfBirthZodiac.Day = Convert.ToInt16(Console.ReadLine());
-                
+                var dayInput = Console.ReadLine();
+                bool dayNumber = int.TryParse(dayInput, out var day);
+
                 Console.Write("Введите месяц(формат: цифра): ");
-                array[i].DateOfBirthZodiac.Month = Convert.ToInt32(Console.ReadLine());
-                
+                var monthInput = Console.ReadLine();
+                bool monthNumber = int.TryParse(monthInput, out var month);
+
                 Console.Write("Введите год(формат: цифра): ");
-                array[i].DateOfBirthZodiac.Year = Convert.ToInt32(Console.ReadLine());
-                
+                var yearInput = Console.ReadLine();
+                bool yearNumber = int.TryParse(yearInput, out var year);
+
+                try
+                {
+                    if (dayNumber && monthNumber && yearNumber)
+                    {
+                        if (DateOfBirthZodiac.DateCheck(day, month, year))
+                        {
+
+                            array[i].DateOfBirthZodiac.Day = day;
+                            array[i].DateOfBirthZodiac.Month = month;
+                            array[i].DateOfBirthZodiac.Year = year;
+                        }
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода даты");
+                    }
+                }
+                catch (Exception ex)
+                {
+                        Console.WriteLine($"{ex.Message}");
+                        Environment.Exit(0);
+                }
+
                 GetSign(array[i]);
                 Console.WriteLine();
             }

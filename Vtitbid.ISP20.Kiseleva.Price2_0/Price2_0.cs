@@ -103,7 +103,7 @@ namespace Vtitbid.ISP20.Kiseleva.Price2_0
             ShopName = shopName;
             GoodPrice = goodPrice;
         }
-        public static Price2_0[] Fill(int count)
+        public static Price2_0[] FillAndCheck(int count)
         {
             Price2_0[] array = new Price2_0[count];
             for (int i = 0; i < array.Length; i++)
@@ -117,7 +117,24 @@ namespace Vtitbid.ISP20.Kiseleva.Price2_0
                 array[i].ShopName = Console.ReadLine();
 
                 Console.Write("Цена товара: ");
-                array[i].GoodPrice = Convert.ToDecimal(Console.ReadLine());
+                var priceInput = Console.ReadLine();
+                bool priceNumber = int.TryParse(priceInput, out var price);
+                try
+                {
+                    if (priceNumber)
+                    {
+                        array[i].GoodPrice = price;
+                    }
+                    else
+                    {
+                        throw new Exception("Ошибка ввода цены");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"{ex.Message}");
+                    Environment.Exit(0);
+                }
 
                 Console.WriteLine();
             }
